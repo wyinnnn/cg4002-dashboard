@@ -21,7 +21,7 @@ componentDidMount = async () => {
   //newDanceMove event; get "moveName" that is inserted;
   //updating the tempDanceMoves array
   socket.on("newDanceMove", ({moveName, positions, user1, user2, user3})=>{
-    alert(moveName + " " + positions);
+    //alert(moveName + " " + positions);
     let tempDanceMoves = this.state.danceMoveList;
     tempDanceMoves.push(moveName);
 
